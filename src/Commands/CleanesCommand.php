@@ -17,11 +17,9 @@ class CleanesCommand extends Command{
 
 	public function handle(){
 
-		$message = "Cleanes started!";
+		$message = "Cleanes started!\n";
 
-		echo $this->newLine(
-			$this->color($message, 'red')
-		);
+		echo $message;
 
 	}
 
