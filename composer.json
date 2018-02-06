@@ -1,0 +1,25 @@
+{
+    "name": "sbkinfo/cleanses",
+    "description": "Trasher for laravel",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "Sviatoslav Sabadosh",
+            "email": "silverreve23@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {},
+	"autoload": {
+	    "psr-4": {
+	        "SBKInfo\\Cleanes\\": "src/"
+	    }
+	},
+	"extra": {
+	    "laravel": {
+	        "providers": [
+	            "SBKInfo\\Cleanes\\Providers\\CleanesProvider"
+	        ],
+	    }
+	}
+}
