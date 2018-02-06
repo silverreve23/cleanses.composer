@@ -1,7 +1,7 @@
 {
     "name": "sbkinfo/cleanses",
     "description": "Trasher for laravel",
-    "license": "GPLv3",
+    "license": "sbkinfo",
     "authors": [
         {
             "name": "Sviatoslav Sabadosh",
