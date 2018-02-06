@@ -17,6 +17,8 @@ class CleanesProvider extends ServiceProvider{
 		if($this->app->runningInConsole())
 	        $this->commands($commands);
 
+		echo "Test package provider";
+
 	}
 
 }
