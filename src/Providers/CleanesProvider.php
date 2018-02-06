@@ -3,19 +3,20 @@
 namespace SBKInfo\Cleanes\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use SBKInfo\Cleanes\Commands\CleanesCommand;
 
 class CleanesProvider extends ServiceProvider{
 
-	use SBKInfo\Cleanes\Traits\CleanesProviderTrait;
+	use \SBKInfo\Cleanes\Traits\CleanesProviderTrait;
 
 	protected $commands = array(
-		'SBKInfo\Cleanes\Commands\CleanesCommand::class'
+		CleanesCommand::class
 	);
 
 	public function boot(){
 
 		if($this->app->runningInConsole())
-	        $this->commands($commands);
+	        $this->commands($this->commands);
 
 		echo "Test package provider";
 
