@@ -4,7 +4,7 @@ namespace SBKInfo\Cleanses\Commands;
 
 use Illuminate\Console\Command;
 
-class CleanserCommand extends Command{
+class CleanserMakeCommand extends Command{
 
 	protected $signature = "make:cleanser {class}";
     private $pathCleanses = null;
@@ -21,7 +21,9 @@ class CleanserCommand extends Command{
             'database/cleanses'
         );
         
-        $this->pathStubClass = './../../stubs/class.stub';
+        $this->pathStubClass 
+            = dirname(__FILE__)
+            .'/../../stubs/class.stub';
 
 	}
 
@@ -42,10 +44,11 @@ class CleanserCommand extends Command{
             $this->pathStubClass
         );
         
-        echo $this->stubCleanseClass;
-        
-//        $this->stubCleanseClass = str_replace();
-        
+        $this->stubCleanseClass = str_replace(
+            'DummyClass',
+            $class = $this->argument('class'),
+            $this->stubCleanseClass
+        );
         
     }  
     
