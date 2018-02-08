@@ -1,0 +1,21 @@
+<?php
+
+use SBKInfo\Cleanes\Interfaces\CleanseInterface;
+
+#-------------------------------------------------------------------------------
+# @class DummyClass
+# Class handle cleanses
+#-------------------------------------------------------------------------------
+class DummyClass extends CleanseInterface{
+    
+    #---------------------------------------------------------------------------
+	# @method run
+	# @access public
+	# @params void
+	# @return void
+	# Metod run clean table
+	#---------------------------------------------------------------------------
+    public function run(){
+        # code
+    }
+}

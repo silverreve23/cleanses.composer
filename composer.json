@@ -12,13 +12,13 @@
     "require": {},
 	"autoload": {
 	    "psr-4": {
-	        "SBKInfo\\Cleanes\\": "src/"
+	        "\\SBKInfo\\Cleanses\\": "src/"
 	    }
 	},
 	"extra": {
 	    "laravel": {
 	        "providers": [
-	            "SBKInfo\\Cleanes\\Providers\\CleanesProvider"
+	            "SBKInfo\\Cleanses\\Providers\\CleanserProvider"
 	        ]
 	    }
 	}
