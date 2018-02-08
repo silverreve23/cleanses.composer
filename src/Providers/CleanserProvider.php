@@ -10,7 +10,7 @@ class CleanserProvider extends ServiceProvider{
 	use \SBKInfo\Cleanses\Traits\CleanserProviderTrait;
 
 	protected $commands = array(
-		CleanesCommand::class
+		CleanserCommand::class
 	);
 
 	public function boot(){

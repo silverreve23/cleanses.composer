@@ -2,7 +2,7 @@
 
 namespace SBKInfo\Cleanses\Traits;
 
-trait CleanesProviderTrait{
+trait CleanserProviderTrait{
 	
 	public function register(){}
 	
