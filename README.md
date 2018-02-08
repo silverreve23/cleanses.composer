@@ -9,4 +9,19 @@
 
 ## How to install
 
-**composer require "sbkinfo/cleanses:dev-master"**
+Run this command in terminal
+
+	composer require "sbkinfo/cleanses:dev-master"
+
+Include ServiceProvider in <b>config/app.php</b> 
+
+```php
+
+'providers' => [
+    
+    # Other service providers...
+    SBKInfo\Cleanses\Providers\CleanserProvider::class
+    
+]
+
+```
