@@ -14,12 +14,5 @@
 	    "psr-4": {
 	        "SBKInfo\\Cleanses\\": "src/"
 	    }
-	},
-	"extra": {
-	    "laravel": {
-	        "providers": [
-	            "SBKInfo\\Cleanses\\Providers\\CleanserProvider"
-	        ]
-	    }
 	}
 }
