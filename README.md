@@ -27,3 +27,11 @@ Include ServiceProvider in <b>config/app.php</b>
 ]
 
 ```
+
+To create a Cleanser class, run the following command
+
+	php artisan make:cleanser Test
+
+To run a Cleanser class, run the following command
+
+	php artisan db:cleanser Test

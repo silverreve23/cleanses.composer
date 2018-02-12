@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 
 class CleanserRunCommand extends Command{
 
-	protected $signature = "db:cleanse {class}";
+	protected $signature = "db:cleanser {class}";
     private $pathCleanses = null;
     
 	protected $description = 'Command description.';
