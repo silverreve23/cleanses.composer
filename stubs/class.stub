@@ -1,6 +1,7 @@
 <?php
 
 use SBKInfo\Cleanses\Interfaces\CleanserInterface;
+use Illuminate\Support\Facades\DB;
 
 #-------------------------------------------------------------------------------
 # @class DummyClass
@@ -16,7 +17,9 @@ class DummyClass implements CleanserInterface{
 	# Metod run clean table
 	#---------------------------------------------------------------------------
     public function run(){
-        # code
+        
+        DB::table('...')->delete();
+        
     }
     
 }
