@@ -63,7 +63,10 @@ class CleanserMakeCommand extends Command{
         
         $message = 'Error! This class name exist!';
         
-        if(file_exists($this->pathCleanses))
+        if(file_exists($this->pathCleanses)){
+			
+			mkdir($this->pathCleanses, 0777);			
+			
             if(!file_exists($nameCleanseClass)){
                 
                 $message = "Create cleanse finished!\n";
@@ -78,6 +81,8 @@ class CleanserMakeCommand extends Command{
             }
             else
                 $this->error($message);
+                
+		}
         
         
     }

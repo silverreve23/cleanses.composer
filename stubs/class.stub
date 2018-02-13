@@ -18,7 +18,7 @@ class DummyClass implements CleanserInterface{
 	#---------------------------------------------------------------------------
     public function run(){
         
-        DB::table('...')->delete();
+        DB::table('...')->truncate();
         
     }
     
