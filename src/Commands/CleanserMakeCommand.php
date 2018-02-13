@@ -78,9 +78,11 @@ class CleanserMakeCommand extends Command{
                 
                 $this->info($message);
                 
-            }
-            else
+            }else{
+				
                 $this->error($message);
+                
+			}
                 
 		}
         
