@@ -6,14 +6,13 @@
 
 <p align="center">
     Cleanses (database inverse seeds) for laravel framework.
-    This package is beta version!
 </p>
 
 ## How to install
 
 Run this command in terminal
 
-	composer require "sbkinfo/cleanses:dev-master"
+	composer require "sbkinfo/cleanses"
 
 Include ServiceProvider in <b>config/app.php</b> 
 
