@@ -9,7 +9,7 @@ class CleanserRunCommand extends Command{
 	protected $signature = "db:cleanser {class}";
     private $pathCleanses = null;
     
-	protected $description = 'Command description.';
+	protected $description = 'Run cleanser class.';
 
 	public function __construct(){
 
