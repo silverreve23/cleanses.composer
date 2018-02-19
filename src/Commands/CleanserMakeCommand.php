@@ -6,12 +6,12 @@ use Illuminate\Console\Command;
 
 class CleanserMakeCommand extends Command{
 
-	protected $signature = "make:cleanser {class}";
+    protected $signature = "make:cleanser {class}";
     private $pathCleanses = null;
     private $pathStubClass = null;
     private $stubCleanseClass = null;
     
-	protected $description = 'Command description.';
+	protected $description = 'Make cleanser class.';
 
 	public function __construct(){
 
